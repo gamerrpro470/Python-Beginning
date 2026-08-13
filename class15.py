@@ -16,4 +16,19 @@
 # tuplee= ("a" , "b" , "c" , "d" , "e")
 # print(tuplee[1 : 4])
 
+# num = (5,3,5,5,2,5,)
+# times = num.count(5)
+# print(times)
 
+# num = (100,200,300,400,)
+# times = num.index(300)
+# print(times)
+
+# number = ("pakistan" , "karachi",)
+# print(number)
+
+data = ("jhon" , 30 , "engineer",)
+name , age , profession = data
+print(name)
+print(age)
+print(profession)
