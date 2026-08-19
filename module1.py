@@ -64,7 +64,7 @@ print(f"your age is {age}")
 name = input("enter your name:")
 age = int(input("ener your age:"))
 favourite_subject = input("whats your favourite subject:")
-age_after_five_years = "age" + 5
+age_after_five_years = age + 5
 print("age_after_five_years")
 print(type(name))
 print(type(age))
