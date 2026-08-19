@@ -86,5 +86,5 @@ current_rank , target_rank = target_rank , current_rank
 print("PERSONAL_ID")
 print (f"| name | : {name} * | Profession | : {profession} *")
 print (f"| age | : {age} * | birth year | : {approx_birthyear} *")
-print (f" | current renk | : {current_rank} * | target rank | : {target_rank} *")
-print (f" | country | : {country} *")
+print (f"| current renk | : {current_rank} * | target rank | : {target_rank} *")
+print (f"| country | : {country} *")
