@@ -27,8 +27,8 @@
 # number = ("pakistan" , "karachi",)
 # print(number)
 
-data = ("jhon" , 30 , "engineer",)
-name , age , profession = data
-print(name)
-print(age)
-print(profession)
+# data = ("jhon" , 30 , "engineer",)
+# name , age , profession = data
+# print(name)
+# print(age)
+# print(profession)
