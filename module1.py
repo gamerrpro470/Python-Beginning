@@ -70,9 +70,17 @@ print(type(name))
 print(type(age))
 print(type(favourite_subject))
 print(f"Hi {name} you are {age} years old and your favourite subject is {favourite_subject} and after five years your age will be {age_after_five_years}")
-# first of all i took input from user his name age and his fav subject then in the 67th line i made a variable in which i made a command of addition to tell user his or her age after 5 years then i printed the data type of the name age and fav subject then printed the users name age fav subject and age after 5 years in a single sentence using f concatination method.
 
+"""
+first of all i took input from user his name age
+and his fav subject then in the 67th line i made
+a variable in which i made a command of addition
+to tell user his or her age after 5 years then i
+printed the data type of the name age and fav subject
+then printed the users name age fav subject and age
+after 5 years in a single sentence using f concatination method.
 
+"""
 # mini project
 name = input("enter name :")
 age = int(input("enter age :"))
