@@ -87,26 +87,29 @@
 # else :
 #     print(new_item,"added to cart")
 
-# mini assignment
-# units_comsumed = int(input("number of units consumed :"))
-# perunit_rate = 25
-# due_date = input("duedate paseed or not (yes or no) :")
+# mini assignment billl calculator
+units_comsumed = int(input("number of units consumed :"))
+perunit_rate = 25
+due_date = input("duedate paseed or not (yes or no) :")
 
-# total_bill = units_comsumed * perunit_rate
-# if units_comsumed >= 300 :
-#  units_comsumed *= 0.10
-#  print(f"Your bill after surcharge is:{units_comsumed}")
-# elif total_bill >= 5000 and due_date == "no" :
-#     print("'Bill Overdue - Pay Immediately")
-# else :
-#    print("you can pay now or later")
-# membership_category = input("enter category :").lower()
-# membership = ["domestic", "commercial", "industrial"]   
-# if membership_category in membership :
-#    print("valid category")
-# else :
-#     print("invalid category")
-# print(total_bill)
+total_bill = units_comsumed * perunit_rate
+if units_comsumed >= 300 :
+ units_comsumed *= 0.10
+ print(f"Your bill after surcharge is:{units_comsumed}")
+elif total_bill >= 5000 and due_date == "no" :
+    print("'Bill Overdue - Pay Immediately")
+else :
+   print("you can pay now or later")
+
+# category
+membership = ["domestic", "commercial", "industrial"]   
+membership_category = input("enter category :").lower()
+
+if membership_category in membership :
+   print("valid category")
+else :
+    print("invalid category")
+print(total_bill)
 
 # Q
 # Isaam = 5 + 3 * 2 ** 2
@@ -127,58 +130,58 @@
 # True
 
 
-# mini project
-history = []
-print("|| TAKING INPUT FROM USER ||\n")
-num1 = float(input("enter num1 :"))
-num2 = float(input("enter num2 :"))
-print("|| FINDING RESULTS USING ARITHMATIC OPERATORS ||\n")
-print(f"addition: = {num1 + num2}\n")
-print(f"subtraction: = {num1 - num2}\n")
-print(f"numtiplication: {num1 * num2}\n")
-print(f"division: {num1 / num2}\n")
-print(f"floor divison: {num1 // num2}\n")
-print(f"modulus: {num1 % num2}\n")
-print(f"exponent: {num1 ** num2}\n")
+# mini project calculator
+# history = []
+# print("|| TAKING INPUT FROM USER ||\n")
+# num1 = float(input("enter num1 :"))
+# num2 = float(input("enter num2 :"))
+# print("|| FINDING RESULTS USING ARITHMATIC OPERATORS ||\n")
+# print(f"addition: = {num1 + num2}")
+# print(f"subtraction: = {num1 - num2}")
+# print(f"numtiplication: {num1 * num2}")
+# print(f"division: {num1 / num2}")
+# print(f"floor divison: {num1 // num2}")
+# print(f"modulus: {num1 % num2}")
+# print(f"exponent: {num1 ** num2}")
 
-history.append(num1)
-history.append(num2)
-print(f"calculation history {history}\n")
+# history.append(num1)
+# history.append(num2)
+# print(f"calculation history {history}\n")
 
-print("|| USING COMPARISION OPERATORS FOR COMPARISION ||\n")
-if num1 > num2 :
-    print("num1 is greater\n")
-elif num1 == num2 : 
-    print("both numbers are equal\n")
-else :
-    print("num2 is greater\n")
+# print("|| USING COMPARISION OPERATORS FOR COMPARISION ||\n")
+# if num1 > num2 :
+#     print("num1 is greater\n")
+# elif num1 == num2 : 
+#     print("both numbers are equal\n")
+# else :
+#     print("num2 is greater\n")
 
-print("|| POSITIVE OR NEGATIVE CHECKER ||\n")
-if num1 >= 0 and num2 >= 0:
-    print("both numbers are positve\n")
-elif num1 >= 0 and num2 < 0:
-    print("num1 is positive and num2 is negative\n")
-elif num1 < 0 and num2 >= 0:
-    print("num1 is negative and num2 is positive\n")
-else:
-    print("both numbers are negative\n")
+# print("|| POSITIVE OR NEGATIVE CHECKER ||\n")
+# if num1 >= 0 and num2 >= 0:
+#     print("both numbers are positve\n")
+# elif num1 >= 0 and num2 < 0:
+#     print("num1 is positive and num2 is negative\n")
+# elif num1 < 0 and num2 >= 0:
+#     print("num1 is negative and num2 is positive\n")
+# else:
+#     print("both numbers are negative\n")
 
-print("|| CHECKING USER'S FAVOURITE OPRATOR USING MEMBERSHIP OPERATOR ||\n")
-valid_operators = [ "+" , "-" , "*" , "/" , "**" , "//" ,"%" ]
-users_fav_operator = input("enter your favourite operator :")
-if users_fav_operator in valid_operators:
-    print("your favourite operator found\n")
-else : 
-    print("your favourite operator not found\n")
+# print("|| CHECKING USER'S FAVOURITE OPRATOR USING MEMBERSHIP OPERATOR ||\n")
+# valid_operators = [ "+" , "-" , "*" , "/" , "**" , "//" ,"%" ]
+# users_fav_operator = input("enter your favourite operator :")
+# if users_fav_operator in valid_operators:
+#     print("your favourite operator found\n")
+# else : 
+#     print("your favourite operator not found\n")
 
-print("|| CHECKING HISTORY USING IDENTITY OPERATOR ||\n")
-if history is None:
-    print("no history found\n")
-elif history == []:
-    print("history is empty\n")
-else :
-    print("numbers are present in history\n")
+# print("|| CHECKING HISTORY USING IDENTITY OPERATOR ||\n")
+# if history is None:
+#     print("no history found\n")
+# elif history == []:
+#     print("history is empty\n")
+# else :
+#     print("numbers are present in history\n")
 
-for numbers in history :
-    print(f"the numbers in history are : {numbers}\n")
+# for numbers in history :
+#     print(f"the numbers in history are : {numbers}\n")
 
