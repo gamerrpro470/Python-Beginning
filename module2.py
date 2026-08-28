@@ -129,56 +129,56 @@
 
 # mini project
 history = []
-print("|| TAKING INPUT FROM USER ||")
+print("|| TAKING INPUT FROM USER ||\n")
 num1 = float(input("enter num1 :"))
 num2 = float(input("enter num2 :"))
-print("|| FINDING RESULTS USING ARITHMATIC OPERATORS ||")
-print(f"addition: = {num1 + num2}")
-print(f"subtraction: = {num1 - num2}")
-print(f"numtiplication: {num1 * num2}")
-print(f"division: {num1 / num2}")
-print(f"floor divison: {num1 // num2}")
-print(f"modulus: {num1 % num2}")
-print(f"exponent: {num1 ** num2}")
+print("|| FINDING RESULTS USING ARITHMATIC OPERATORS ||\n")
+print(f"addition: = {num1 + num2}\n")
+print(f"subtraction: = {num1 - num2}\n")
+print(f"numtiplication: {num1 * num2}\n")
+print(f"division: {num1 / num2}\n")
+print(f"floor divison: {num1 // num2}\n")
+print(f"modulus: {num1 % num2}\n")
+print(f"exponent: {num1 ** num2}\n")
 
 history.append(num1)
 history.append(num2)
-print(f"calculation history {history}")
+print(f"calculation history {history}\n")
 
-print("|| USING COMPARISION OPERATORS FOR COMPARISION ||")
+print("|| USING COMPARISION OPERATORS FOR COMPARISION ||\n")
 if num1 > num2 :
-    print("num1 is greater")
+    print("num1 is greater\n")
 elif num1 == num2 : 
-    print("both numbers are equal")
+    print("both numbers are equal\n")
 else :
-    print("num2 is greater")
+    print("num2 is greater\n")
 
-print("|| POSITIVE OR NEGATIVE CHECKER ||")
+print("|| POSITIVE OR NEGATIVE CHECKER ||\n")
 if num1 >= 0 and num2 >= 0:
-    print("both numbers are positve")
+    print("both numbers are positve\n")
 elif num1 >= 0 and num2 < 0:
-    print("num1 is positive and num2 is negative")
+    print("num1 is positive and num2 is negative\n")
 elif num1 < 0 and num2 >= 0:
-    print("num1 is negative and num2 is positive")
+    print("num1 is negative and num2 is positive\n")
 else:
-    print("both numbers are negative")
+    print("both numbers are negative\n")
 
-print("|| CHECKING USER'S FAVOURITE OPRATOR USING MEMBERSHIP OPERATOR ||")
+print("|| CHECKING USER'S FAVOURITE OPRATOR USING MEMBERSHIP OPERATOR ||\n")
 valid_operators = [ "+" , "-" , "*" , "/" , "**" , "//" ,"%" ]
 users_fav_operator = input("enter your favourite operator :")
 if users_fav_operator in valid_operators:
-    print("your favourite operator found")
+    print("your favourite operator found\n")
 else : 
-    print("your favourite operator not found")
+    print("your favourite operator not found\n")
 
-print("|| CHECKING HISTORY USING IDENTITY OPERATOR ||")
+print("|| CHECKING HISTORY USING IDENTITY OPERATOR ||\n")
 if history is None:
-    print("no history found")
+    print("no history found\n")
 elif history == []:
-    print("history is empty")
+    print("history is empty\n")
 else :
-    print("numbers are present in history")
+    print("numbers are present in history\n")
 
 for numbers in history :
-    print(f"the numbers in history are : {numbers}")
+    print(f"the numbers in history are : {numbers}\n")
 
