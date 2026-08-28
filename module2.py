@@ -129,8 +129,10 @@
 
 # mini project
 history = []
-num1 = float(input("enter num1"))
-num2 = float(input("enter num2"))
+print("|| TAKING INPUT FROM USER ||")
+num1 = float(input("enter num1 :"))
+num2 = float(input("enter num2 :"))
+print("|| FINDING RESULTS USING ARITHMATIC OPERATORS ||")
 print(f"addition: = {num1 + num2}")
 print(f"subtraction: = {num1 - num2}")
 print(f"numtiplication: {num1 * num2}")
@@ -139,9 +141,11 @@ print(f"floor divison: {num1 // num2}")
 print(f"modulus: {num1 % num2}")
 print(f"exponent: {num1 ** num2}")
 
-history.append {num1 , num2}
+history.append(num1)
+history.append(num2)
 print(f"calculation history {history}")
 
+print("|| USING COMPARISION OPERATORS FOR COMPARISION ||")
 if num1 > num2 :
     print("num1 is greater")
 elif num1 == num2 : 
@@ -149,5 +153,32 @@ elif num1 == num2 :
 else :
     print("num2 is greater")
 
+print("|| POSITIVE OR NEGATIVE CHECKER ||")
+if num1 >= 0 and num2 >= 0:
+    print("both numbers are positve")
+elif num1 >= 0 and num2 < 0:
+    print("num1 is positive and num2 is negative")
+elif num1 < 0 and num2 >= 0:
+    print("num1 is negative and num2 is positive")
+else:
+    print("both numbers are negative")
 
+print("|| CHECKING USER'S FAVOURITE OPRATOR USING MEMBERSHIP OPERATOR ||")
+valid_operators = [ "+" , "-" , "*" , "/" , "**" , "//" ,"%" ]
+users_fav_operator = input("enter your favourite operator :")
+if users_fav_operator in valid_operators:
+    print("your favourite operator found")
+else : 
+    print("your favourite operator not found")
+
+print("|| CHECKING HISTORY USING IDENTITY OPERATOR ||")
+if history is None:
+    print("no history found")
+elif history == []:
+    print("history is empty")
+else :
+    print("numbers are present in history")
+
+for numbers in history :
+    print(f"the numbers in history are : {numbers}")
 
