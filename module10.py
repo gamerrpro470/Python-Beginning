@@ -43,14 +43,77 @@
 # print(recursive_sum(5))  
 
 # Q7
-counter = 91
-def updatecounter():
+# counter = 91
+# def updatecounter():
 
-    global counter
-    counter += 3
-updatecounter()
-print(counter)
+#     global counter
+#     counter += 3
+# updatecounter()
+# print(counter)
 
-    
+# debugging questions
+# Q1
+# def greet():
+#      print("Hello")
+#      greet()
 
+# def greet():
+#     print("hello")
 
+# greet()
+
+# Q2
+# def add(a, b):
+#       return a + b
+#
+# print(add(5)) 
+
+# def add(a, b):
+#          return a + b
+
+# print(add(5, 2)) 
+
+# Q3
+# def square(n)
+#      return n * n
+
+# print(square(4)) 
+
+# def square(n):
+#      return n * n
+
+# print(square(4)) 
+
+# Q4
+# def total(*args):
+#          print(args + 1)
+
+# total(1, 2, 3) 
+
+# def total(*args):
+#           print(args, 1)
+
+# total(1, 2, 3)
+
+# Q5
+# def show():
+#          print(x)
+#          x = 10
+
+# show() 
+
+# def show():
+#          x = 10
+#          print(x)
+
+# show() 
+
+# mini assignment
+def student_marks(subject1 = 0, subject2 = 0 , subject3 = 0):
+    total = subject1 + subject2 + subject3
+    print(total)
+    average = total / 3
+    print(average)
+    grade = lambda average: "A" if average >= 80 else "B" if average >= 60 else "C" if average >= 40 else "Fail"
+    print("Grade", grade(average))
+student_marks(100, 90, 80)
