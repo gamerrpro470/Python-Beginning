@@ -109,11 +109,44 @@
 # show() 
 
 # mini assignment
-def student_marks(subject1 = 0, subject2 = 0 , subject3 = 0):
-    total = subject1 + subject2 + subject3
-    print(total)
-    average = total / 3
-    print(average)
-    grade = lambda average: "A" if average >= 80 else "B" if average >= 60 else "C" if average >= 40 else "Fail"
-    print("Grade", grade(average))
-student_marks(100, 90, 80)
+# def student_marks(subject1 = 0, subject2 = 0 , subject3 = 0):
+#     total = subject1 + subject2 + subject3
+#     print(total)
+#     average = total / 3
+#     print(average)
+#     grade = lambda average: "A" if average >= 80 else "B" if average >= 60 else "C" if average >= 40 else "Fail"
+#     print("Grade", grade(average))
+# student_marks(100, 90, 80)
+
+# mini project
+def sum(a , b):
+    return a + b 
+
+# add = sum(12 , 4)
+
+def minus(a , b):
+    return a - b
+
+# subtract = minus(10 - 7)
+
+def multiplication(a , b):
+    return a * b
+
+# multiply = multiplication(12 , 4)
+
+def division(a , b = 1):
+    return a / b
+
+# divide = division(12 / 2)
+
+def operations(*args):
+    return sum(args)
+
+average = lambda a , b : (a + b) / 2
+
+def factorial(n):
+    if n == 0 :
+        return 0
+    return n * factorial(n -1)
+
+
