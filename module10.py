@@ -119,6 +119,7 @@
 # student_marks(100, 90, 80)
 
 # mini project
+history = []
 def sum(a , b):
     return a + b 
 
@@ -130,6 +131,8 @@ def minus(a , b):
 # subtract = minus(10 - 7)
 
 def multiplication(a , b):
+    global history
+    history.append((a , b))
     return a * b
 
 # multiply = multiplication(12 , 4)
@@ -148,6 +151,8 @@ def factorial(n):
     if n == 0 :
         return 0
     return n * factorial(n -1)
+
+
 
 
 
