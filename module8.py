@@ -1,3 +1,19 @@
+# module 8
+
+# Mini Assignment
+name = input("Enter your full name: ")
+formatted_name = name.title()
+print(f"Formatted Name: {formatted_name}")
+length = len(name)
+print(f"Total length of name: {length}")
+if ' ' in name:
+    print("Yes, there is a space in the name.")
+else:
+    print("No, there is no space in the name.")
+reversed_name = name[::-1]
+print(f"Reversed Name: {reversed_name}")
+
+# Mini Project
 sentence = input("Enter any sentence: ")
 words = sentence.split()
 total_words = len(words)
