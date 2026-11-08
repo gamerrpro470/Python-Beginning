@@ -1,4 +1,17 @@
-expenses = []
+import json
+
+def load_expenses():
+    try:
+        with open("expenses.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
+
+def save_expenses(expenses):
+    with open("expenses.json", "w") as f:
+        json.dump(expenses, f)
+
+expenses = load_expenses()
 
 while True:
     print("\n1. add expense")
@@ -12,6 +25,7 @@ while True:
         category = input("category (food, transport, etc): ")
         expenses.append({"amount": amount, "category": category})
         print("expense added successfully.")
+        save_expenses(expenses)
 
     elif choice == "2":
         for item in expenses:
@@ -29,4 +43,3 @@ while True:
     else:
         print("invalid choice, try again.")
 
-        
