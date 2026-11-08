@@ -31,3 +31,4 @@ else:
     print(f"No, the word '{word_to_find}' is not present in the sentence.")
 reversed_sentence = sentence[::-1]
 print(f"Reversed Sentence: {reversed_sentence}")
+
